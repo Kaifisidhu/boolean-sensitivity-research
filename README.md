@@ -8,6 +8,10 @@ A research thread exploring the complexity landscape of Boolean functions — se
 |---|---|
 | `code/census.py` | Exhaustively computes the complexity landscape for all 2^16 Boolean functions on 4 variables; verifies Huang's Sensitivity Theorem from scratch. |
 | `code/profile-solver.py` | Exact solver over the *profile graph* (not the necklace graph) to find true sensitivity floors for cyclically invariant functions — cheap enough to reach sizes brute force can't. |
+| `docs/census-output.pdf` | Raw run output of `code/census.py` — exact distributions over all 65,536 functions, Huang's theorem verified with zero violations. |
+| `docs/census-findings.pdf` | Write-up of the census results: the Parseval invariant checked 65,536 times, Huang's proof object rebuilt from eigenvalues, an unplanned finding that C(f)=bs(f) at n=4, and a self-correction on an overclaimed detector accuracy. |
+| `figures/census-landscape.png` | Plot: sensitivity vs. degree landscape, average Fourier spectrum, complexity measure counts. |
+| `figures/census-huang-matrix.png` | Plot: Huang's edge-signing matrix A₄ visualized (A² = 4I). |
 | `docs/two-families-output.pdf` | States and stress-tests a conjecture: for every n, the minimum sensitivity of a non-constant cyclically invariant Boolean function is attained by a **residue** family or a **gap** family — never neither. Includes falsifiable predictions. |
 | `docs/p-vs-np-memo.md` | Research memo: not a proof of P ≠ NP, but a specification — derived from the three major barrier theorems (relativization, natural proofs, algebrization) — of properties any valid separating proof must have. |
 | `docs/deep369-output.pdf` | Traces the real math under the "3-6-9" numerology claim down through repeating decimals, primitive roots, and Artin's conjecture (still open) to Dirichlet characters and the Riemann Hypothesis. |
