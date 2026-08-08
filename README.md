@@ -15,6 +15,9 @@ A research thread exploring the complexity landscape of Boolean functions — se
 | `docs/two-families-output.pdf` | States and stress-tests a conjecture: for every n, the minimum sensitivity of a non-constant cyclically invariant Boolean function is attained by a **residue** family or a **gap** family — never neither. Includes falsifiable predictions. |
 | `docs/p-vs-np-memo.md` | Research memo: not a proof of P ≠ NP, but a specification — derived from the three major barrier theorems (relativization, natural proofs, algebrization) — of properties any valid separating proof must have. |
 | `docs/deep369-output.pdf` | Traces the real math under the "3-6-9" numerology claim down through repeating decimals, primitive roots, and Artin's conjecture (still open) to Dirichlet characters and the Riemann Hypothesis. |
+| `code/exact-floor.py` | Repairs an earlier annealing-based search (upper bounds moved when given more compute — discarded). Exact depth-first search with sound pruning: decides definitively whether a cyclically invariant function with sensitivity ≤ t exists. Proves floors for n up to 11, and shows the cyclic-vs-full-symmetry gap widens with n. |
+| `docs/exact-floor.pdf` | Output of the exact solver — proven floors superseding earlier annealer guesses (e.g. n=8: was guessed 4, annealer numbers withdrawn). |
+| `code/deep369.py` | Companion script to `docs/deep369-output.pdf` — reproduces the repeating-decimal / primitive-root / Artin's-conjecture chain underneath the "3-6-9" numerology claim. |
 | `docs/audit369-output.pdf` | A skeptical audit of the "3, 6, 9 — key to the universe" Tesla quote: confirms the arithmetic pattern is real, shows it's a base-10 artifact (proven: base 10 is the *unique* base producing exactly 3 special residues), and finds no primary source for the quote. |
 
 ## Status
